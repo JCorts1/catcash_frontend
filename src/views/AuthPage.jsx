@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import LoginForm from '../components/LoginForm';
 import SignupForm from '../components/SignupForm';
+import "../styles/SignupForm.css"
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true); // Toggle between login and signup
 
   return (
-    <div>
+    <div className="authentication-form">
       <button onClick={() => setIsLogin(true)}>Login</button>
       <button onClick={() => setIsLogin(false)}>Signup</button>
 
