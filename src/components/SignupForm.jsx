@@ -30,10 +30,12 @@ const SignupForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+    className='sign-up'
+    onSubmit={handleSubmit}>
       <div>
-        <label>Email:</label>
         <input
+          placeholder='Email'
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -41,8 +43,8 @@ const SignupForm = () => {
         />
       </div>
       <div>
-        <label>Password:</label>
         <input
+          placeholder='Password'
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
