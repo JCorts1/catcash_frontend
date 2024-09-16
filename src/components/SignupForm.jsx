@@ -35,6 +35,7 @@ const SignupForm = () => {
     onSubmit={handleSubmit}>
       <div>
         <input
+          className='inputs'
           placeholder='Email'
           type="email"
           value={email}
@@ -44,6 +45,7 @@ const SignupForm = () => {
       </div>
       <div>
         <input
+          className='inputs'
           placeholder='Password'
           type="password"
           value={password}

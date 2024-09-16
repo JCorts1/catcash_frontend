@@ -8,9 +8,23 @@ const AuthPage = () => {
 
   return (
     <div className="authentication-form">
-      <button onClick={() => setIsLogin(true)}>Login</button>
-      <button onClick={() => setIsLogin(false)}>Signup</button>
+      {/* Wrapper for buttons */}
+      <div className="button-group">
+        <button
+          onClick={() => setIsLogin(true)}
+          disabled={isLogin}
+        >
+          Login
+        </button>
+        <button
+          onClick={() => setIsLogin(false)}
+          disabled={!isLogin}
+        >
+          Signup
+        </button>
+      </div>
 
+      {/* Display either LoginForm or SignupForm */}
       {isLogin ? <LoginForm /> : <SignupForm />}
     </div>
   );
