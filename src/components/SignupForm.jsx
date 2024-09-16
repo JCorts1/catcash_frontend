@@ -53,7 +53,7 @@ const SignupForm = () => {
           required
         />
       </div>
-      <button type="submit">Signup</button>
+      <button className='button-default' type="submit">Sign-Up</button>
     </form>
   );
 };
