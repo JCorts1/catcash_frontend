@@ -1,3 +1,40 @@
+.btn-selector-default {
+  background-color: #000;
+  color: #fff;
+  border: 0.5px solid #8d8d8d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn-selector-default:hover {
+  background-color: #8d8d8d;
+  border: 0.5px solid #000;
+  transition: 1.2s;
+  box-shadow: 1px -2px 2px #000;
+}
+
+.btn-selector-default:disabled {
+  background-color: #8d8d8d;
+  border: 0.5px solid #000;
+  transition: 1.2s;
+  box-shadow: 1px -2px 2px #000;
+}
+
+.button-default {
+  background-color: #000;
+  color: #fff;
+  border: 0.5px solid #8d8d8d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button-default:hover {
+  background-color: #8d8d8d;
+  border: 0.5px solid #000;
+  transition: 1.2s;
+  box-shadow: 1px -2px 2px #000;
+}
+
 .sign-up {
   display: flex;
   flex-direction: column;
@@ -14,11 +51,20 @@
 }
 
 .inputs {
-  background-color: #121212;
+  background-color: #000;
   border-radius: 12px;
-  box-shadow: rgba(163, 163, 163, 0.25) 0px 30px 60px -12px inset, rgba(0, 50, 101, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(105, 105, 105, 0.25) 0px 30px 60px -12px inset, rgba(56, 56, 56, 0.3) 0px 18px 36px -18px inset;
   border: 1px solid transparent;
   margin-bottom: 10px;
+  border: 0.5px solid #8d8d8d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.inputs:hover {
+  border: 1px solid transparent;
 }
 
 @media only screen and (max-width: 600px) {
@@ -53,8 +99,5 @@
   .inputs {
     height: 1.5rem;
     width: 200px;
-    color: #fff;
   }
-
-
 }

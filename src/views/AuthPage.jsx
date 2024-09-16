@@ -11,16 +11,18 @@ const AuthPage = () => {
       {/* Wrapper for buttons */}
       <div className="button-group">
         <button
+          className='btn-selector-default'
           onClick={() => setIsLogin(true)}
           disabled={isLogin}
         >
           Login
         </button>
         <button
+          className='btn-selector-default'
           onClick={() => setIsLogin(false)}
           disabled={!isLogin}
         >
-          Signup
+          Sign-Up
         </button>
       </div>
 
